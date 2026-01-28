@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Precise Ink | Tattoos • Booking • Deposits</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">PI</span>
+      <div class="logo-text">
+        <div class="logo-title">Precise Ink</div>
+        <div class="logo-sub">Tattoo Artist • Custom Pieces</div>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#policies">Policies</a>
+    </nav>
+
+    <div class="nav-cta">
+      <button class="btn ghost" id="cartBtn" aria-label="Open cart">
+        Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a class="btn primary" href="#book">Book Now</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<main id="top" class="hero">
+  <div class="hero-bg" style="background-image:url('./assets/hero.jpg')"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="kicker">CALGARY TATTOO ARTIST</div>
+      <h1>Clean lines, bold detail, and pieces that actually last.</h1>
+      <p class="subhead">
+        Custom tattoos • black & grey • realism • lettering. Book your slot and lock it in with a deposit.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#book">Book Now</a>
+        <a class="btn ghost" href="#services">View Services</a>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Sanitized tools</span>
+        <span class="chip">Client-first</span>
+        <span class="chip">Aftercare included</span>
+        <span class="chip">Deposits accepted</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ABOUT -->
+<section id="about" class="section parallax">
+ <div class="section-bg" style="background-image:url('./assets/calgary.jpg')"></div>
+  <div class="wrap two-col">
+
+    <div>
+      <h2>Get to know your artist</h2>
+      <p class="muted" style="color: black; font-size: 25px; text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;">
+        Precise Ink focuses on clean execution, strong composition, and a calm experience from consult to aftercare.
+        Bring your references, ideas, and placement — we’ll shape it into a piece that fits you.
+      </p>
+
+      <div class="callout">
+        <strong>My vibe:</strong> professional, honest recommendations, and detail that reads clean in real life.
+      </div>
+    </div>
+
+    <div class="about-card">
+      <div class="about-photo" style="background-image:url('./assets/hero2.jpg')"></div>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">happy clients</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">years experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">sanitized tools</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section parallax">
+  <div  style="background-image:url('./assets/hero2.jpg')"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 style="color: #fafafa">Services</h2>
+        <p class="muted" style="color: #fafafa">Each service includes consultation + aftercare guidance.</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-img" style="background-image:url('./assets/work1.jpg')"></div>
+        <h3>Black & Grey</h3>
+        <p class="muted">Smooth shading, contrast, and clean readability.</p>
+        <div class="tags">
+          <span class="tag">Sleeves</span>
+          <span class="tag">Portraits</span>
+          <span class="tag">Religious</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('./assets/work2.jpg')"></div>
+        <h3>Horror / Pop culture</h3>
+        <p class="muted">Detail-focused work with strong depth and texture.</p>
+        <div class="tags">
+          <span class="tag">Faces</span>
+          <span class="tag">Scenes</span>
+          <span class="tag">High detail</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('./assets/work4.jpg')"></div>
+        <h3>Religious</h3>
+        <p class="muted">Bold designs, iconic pieces, clean finish.</p>
+        <div class="tags">
+          <span class="tag">Masks</span>
+          <span class="tag">Icons</span>
+          <span class="tag">Custom</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('./assets/work5.jpg')"></div>
+        <h3>Realism</h3>
+        <p class="muted">Script, serif, gothic — placed to fit the body.</p>
+        <div class="tags">
+          <span class="tag">Quotes</span>
+          <span class="tag">Names</span>
+          <span class="tag">Dates</span>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="mini-title">Client results</h3>
+    <div class="results" id="results">
+      <button class="result" data-full="./assets/work1.jpg"><img src="./assets/work1.jpg" alt="Work 1" loading="lazy"></button>
+      <button class="result" data-full="./assets/work2.jpg"><img src="./assets/work2.jpg" alt="Work 2" loading="lazy"></button>
+      <button class="result" data-full="./assets/work3.jpg"><img src="./assets/work3.jpg" alt="Work 3" loading="lazy"></button>
+      <button class="result" data-full="./assets/work4.jpg"><img src="./assets/work4.jpg" alt="Work 4" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" class="section">
+  <div class="wrap" id="prices-wrap">
+    <div class="section-head">
+      <div>
+        <h2 style="color: white">Prices</h2>
+        <p class="muted" style="color: white;">Transparent pricing. Final cost depends on size + detail + placement.</p>
+      </div>
+    </div>
+
+    <!-- MC Beautiez-style four price columns -->
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="pill">SMALL</div>
+        <h3>Small Tattoos</h3>
+        <ul class="price-list">
+          <li><span>1–2"</span><strong>$120+</strong></li>
+          <li><span>Fine line</span><strong>$140+</strong></li>
+          <li><span>Mini shaded</span><strong>$160+</strong></li>
+        </ul>
+        <button class="btn primary full" data-add="Small Piece" data-price="120" data-deposit="50">Add package</button>
+      </div>
+
+      <div class="price-card">
+        <div class="pill">MEDIUM</div>
+        <h3>Medium Tattoos</h3>
+        <ul class="price-list">
+          <li><span>3–5"</span><strong>$250+</strong></li>
+          <li><span>Detailed</span><strong>$300+</strong></li>
+          <li><span>Lettering +</span><strong>$260+</strong></li>
+        </ul>
+        <button class="btn primary full" data-add="Medium Piece" data-price="250" data-deposit="75">Add package</button>
+      </div>
+
+      <div class="price-card">
+        <div class="pill">LARGE</div>
+        <h3>Large Tattoos</h3>
+        <ul class="price-list">
+          <li><span>6–10"</span><strong>$500+</strong></li>
+          <li><span>Realism</span><strong>$650+</strong></li>
+          <li><span>High detail</span><strong>$750+</strong></li>
+        </ul>
+        <button class="btn primary full" data-add="Large Piece" data-price="500" data-deposit="100">Add package</button>
+      </div>
+
+      <div class="price-card">
+        <div class="pill">SLEEVE</div>
+        <h3>Sleeves</h3>
+        <ul class="price-list">
+          <li><span>Half sleeve</span><strong>$900+</strong></li>
+          <li><span>Full sleeve</span><strong>$1600+</strong></li>
+          <li><span>Multi-session</span><strong>Quoted</strong></li>
+        </ul>
+        <button class="btn primary full" data-add="Sleeve Project" data-price="900" data-deposit="150">Add package</button>
+      </div>
+    </div>
+
+    <div class="note-bar">
+      <strong>Note:</strong> Add-ons (touch-ups, extra detail, color) are quoted during consultation.
+    </div>
+  </div>
+</section>
+
+<!-- POLICIES -->
+<section id="policies" class="section soft">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Policies</h2>
+        <p class="muted">Respecting time keeps things smooth for everyone.</p>
+      </div>
+    </div>
+
+    <div class="policy-grid">
+      <div class="policy">
+        <h3>Deposits</h3>
+        <p class="muted">Deposits secure your slot and go toward your total.</p>
+      </div>
+      <div class="policy">
+        <h3>Late / No-show</h3>
+        <p class="muted">Arrive on time. Late arrivals may be shortened or rescheduled.</p>
+      </div>
+      <div class="policy">
+        <h3>Cancellations</h3>
+        <p class="muted">Cancel/reschedule at least <strong>24 hours</strong> before to avoid fees.</p>
+      </div>
+      <div class="policy">
+        <h3>Aftercare</h3>
+        <p class="muted">Results depend on proper aftercare. Instructions provided after your session.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      Tip: replace the text above with your exact business rules once finalized.
+    </div>
+  </div>
+</section>
+
+<!-- BOOK NOW -->
+<section id="book" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Book now</h2>
+        <p class="muted">Pick packages → cart → pay deposit, then submit booking details.</p>
+      </div>
+    </div>
+
+    <div class="book-grid">
+      <!-- Left booking box -->
+      <div class="book-left">
+        <div class="book-card">
+          <h3>Book now</h3>
+          <p class="muted">Choose your package(s), then pay deposit to lock your slot.</p>
+
+          <div class="book-actions">
+            <button class="btn primary" id="openCartFromBook">Open Cart</button>
+            <a class="btn ghost" href="https://www.instagram.com/precise.ink/" target="_blank" rel="noreferrer">Message on Instagram</a>
+          </div>
+
+          <div class="mini-badges">
+            <span class="chip small">Same-week openings vary</span>
+            <span class="chip small">Downtown / NE / SW (edit)</span>
+            <span class="chip small">Cash • eTransfer (edit)</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Right form -->
+      <form class="book-form" id="bookingForm">
+        <div class="row">
+          <div class="field">
+            <label>Full name</label>
+            <input name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label>Email or phone</label>
+            <input name="contact" placeholder="example@email.com" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Service</label>
+            <select name="service" id="serviceSelect" required>
+              <option value="">Select a service</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Preferred date</label>
+            <input name="date" placeholder="e.g., Friday evening" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Notes</label>
+          <textarea name="notes" rows="5" placeholder="Placement, size, style, references, and any sensitivities." required></textarea>
+        </div>
+
+        <div class="cart-summary">
+          <div>
+            <div class="muted tiny">Cart total</div>
+            <div class="summary-num" id="cartTotal">$0</div>
+          </div>
+          <div>
+            <div class="muted tiny">Deposit due</div>
+            <div class="summary-num gold" id="depositDue">$0</div>
+          </div>
+          <div class="summary-actions">
+            <button type="button" class="btn ghost" id="openCartInline">Edit cart</button>
+            <a class="btn primary" href="#" id="payDeposit" target="_blank" rel="noreferrer">Pay deposit</a>
+          </div>
+        </div>
+
+        <button class="btn primary full" type="submit">Submit Booking Request</button>
+        <div class="form-msg" id="formMsg"></div>
+        <div class="muted tiny">
+          Mockup: form opens an email draft. Payments use a placeholder link until Stripe is connected.
+        </div>
+      </form>
+    </div>
+    <!-- AVAILABILITY CALENDAR -->
+    <div class="wrap" style="margin-top:28px;">
+      <div class="book-card">
+        <h3>Available times</h3>
+        <p class="muted">Pick a time that works for you. Only available slots are shown.</p>
+
+        <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/YOUR_USERNAME/YOUR_EVENT"
+                style="min-width:320px;height:720px;"
+        ></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="muted">© <span id="year"></span> Precise Ink</div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#policies">Policies</a>
+      <a href="#book">Book</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="icon-btn" id="closeDrawer" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-empty" id="drawerEmpty">
+        <p class="muted">Your cart is empty.</p>
+        <p class="muted tiny">Add a package from the Prices section.</p>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="drawer-totals">
+        <div class="line">
+          <span class="muted">Estimated total</span>
+          <strong id="drawerTotal">$0</strong>
+        </div>
+        <div class="line">
+          <span class="muted">Deposit due</span>
+          <strong class="gold" id="drawerDeposit">$0</strong>
+        </div>
+
+        <div class="drawer-note">
+          Deposit locks your slot and is applied to your final total.
+        </div>
+
+        <div class="drawer-actions">
+          <button class="btn ghost full" id="clearCart">Clear cart</button>
+          <a class="btn primary full" href="#book" id="goToBook">Continue to booking</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="icon-btn lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <img id="lightboxImg" alt="Expanded work" />
+</div>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
