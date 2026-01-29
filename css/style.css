@@ -444,6 +444,27 @@ h3{ font-size: 18px; }
   box-shadow: var(--shadow);
   padding:18px;
 }
+
+
+/* Only the section header text should be white */
+#policies.policies-bg .section-head h2,
+#policies.policies-bg .section-head .muted{
+  color: #fff;
+}
+
+#policies.policies-bg .section-head .muted{
+  color: rgba(255,255,255,.85);
+}
+
+/* Cards stay readable with dark text */
+#policies.policies-bg .policy h3{
+  color: #0b0b0b;
+}
+
+#policies.policies-bg .policy .muted{
+  color: #555;
+}
+
 .tip{
   margin-top:14px;
   border:1px solid var(--line);
@@ -654,3 +675,40 @@ textarea{ resize:vertical; }
   .hamburger{ display:block; }
   .row{ grid-template-columns: 1fr; }
 }
+
+/* POLICIES BACKGROUND IMAGE */
+#policies.policies-bg{
+  position: relative;
+  background-image: url("../assets/policies-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* subtle parallax feel */
+}
+
+/* Dark overlay for readability */
+#policies.policies-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.55); /* adjust darkness here */
+  z-index:0;
+  pointer-events:none; /* never blocks clicks */
+}
+
+/* Keep content above overlay */
+#policies.policies-bg .wrap{
+  position: relative;
+  z-index:2;
+}
+
+/* Make text readable on image */
+#policies.policies-bg h2,
+#policies.policies-bg h3,
+#policies.policies-bg p{
+  color:#fff;
+}
+
+#policies.policies-bg .muted{
+  color: rgba(255,255,255,.85);
+}
+
